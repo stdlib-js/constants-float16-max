@@ -35,38 +35,32 @@ limitations under the License.
 
 > Maximum [half-precision floating-point number][half-precision-floating-point-format].
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/constants-float16-max
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-FLOAT16_MAX = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-float16-max@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var FLOAT16_MAX = require( 'path/to/vendor/umd/constants-float16-max/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/constants-float16-max@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.FLOAT16_MAX;
-})();
-</script>
+var FLOAT16_MAX = require( '@stdlib/constants-float16-max' );
 ```
 
 #### FLOAT16_MAX
@@ -90,21 +84,11 @@ var bool = (FLOAT16_MAX === 65504.0 );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/constants-float16-max@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var FLOAT16_MAX = require( '@stdlib/constants-float16-max' );
 
 console.log( FLOAT16_MAX );
 // => 65504.0
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -165,8 +149,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/constants-float16-max.svg
 [npm-url]: https://npmjs.org/package/@stdlib/constants-float16-max
 
-[test-image]: https://github.com/stdlib-js/constants-float16-max/actions/workflows/test.yml/badge.svg?branch=main
-[test-url]: https://github.com/stdlib-js/constants-float16-max/actions/workflows/test.yml?query=branch:main
+[test-image]: https://github.com/stdlib-js/constants-float16-max/actions/workflows/test.yml/badge.svg?branch=v0.2.2
+[test-url]: https://github.com/stdlib-js/constants-float16-max/actions/workflows/test.yml?query=branch:v0.2.2
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/constants-float16-max/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/constants-float16-max?branch=main
@@ -202,9 +186,9 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/constants/float32/max]: https://github.com/stdlib-js/constants-float32-max/tree/umd
+[@stdlib/constants/float32/max]: https://github.com/stdlib-js/constants-float32-max
 
-[@stdlib/constants/float64/max]: https://github.com/stdlib-js/constants-float64-max/tree/umd
+[@stdlib/constants/float64/max]: https://github.com/stdlib-js/constants-float64-max
 
 <!-- </related-links> -->
 
