@@ -65,7 +65,7 @@ var FLOAT16_MAX = require( '@stdlib/constants-float16-max' );
 
 #### FLOAT16_MAX
 
-Maximum [single-precision floating-point number][half-precision-floating-point-format].
+Maximum [half-precision floating-point number][half-precision-floating-point-format].
 
 ```javascript
 var bool = (FLOAT16_MAX === 65504.0 );
